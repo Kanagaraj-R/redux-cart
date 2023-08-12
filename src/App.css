@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-brand,
+.nav-Link {
+  text-decoration: none;
+  margin-right: 40px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dropdown-item {
+  text-decoration: none;
+  color: white;
+}
+.overflow-hidden {
+  max-height: 30vh;
+}
+img {
+  border-radius: 9px;
+}
+.btn {
+  border-radius: "20px";
+  width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 70px;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border-radius: 5px;
+}
+.cart-button {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 14px;
+  color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+.plus {
+  background-color: #5cb85c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.minus {
+  background-color: #d9534f;
+}
+
+.cart-button:hover {
+  transform: scale(1.1);
+}
+.quantity {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.remove-from-cart {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #1a1919;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.remove-from-cart:hover {
+  text-decoration: underline;
+}
+.cart-image {
+  margin-top: 80px;
+  margin-left: 500px;
+  height: 300px;
+  width: 600px;
+}
+.image-text {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imagetext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image {
+  width: 100%;
+  max-height: 100%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1;
+  padding-left: 3rem;
+}
+
+.text-overlay {
+  text-align: left;
+  color: black;
+}
+
+.text-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-overlay p {
+  font-size: 1.5rem;
 }
